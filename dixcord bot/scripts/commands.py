@@ -56,34 +56,11 @@ class Handler(commands.Cog):
 
     @commands.command()
     async def send_zoom(self, ctx, the_class=""):
-        if the_class == "ערבית":
-            await ctx.send('https://edu-il.zoom.us/j/7328072750')
-        elif the_class == "כישורי חיים":
-            await ctx.send('https://edu-il.zoom.us/j/96050052341?pwd=RndxY0M4RElXQzRpV2dXeGpXdVdaQT09')
-        elif the_class == "ספורט":
-            await ctx.send('https://us04web.zoom.us/j/75667411544?pwd=bm1jZ1F0b0syVnZJSjduYUtOc1h0dz09')
-        elif the_class == "חינוך":
-            await ctx.send('https://edu-il.zoom.us/j/92207525681?pwd=czJqblZpSzZkaGREZVVmVFV6UHlYdz09')
-        elif the_class == "מדעים":
-            await ctx.send('https://edu-il.zoom.us/j/92439764649?pwd=Q2NkNWVKdmtiVVB2VllPNG5vdVdlZz09')
-        elif the_class == "מתמטיכיף":
-            await ctx.send('https://edu-il.zoom.us/j/94422187142?pwd=MUJmRG8xR0w4WitiWVVHYmNZaWlBdz09')
-        elif the_class == "מתמטיקה":
-            await ctx.send('https://edu-il.zoom.us/j/6029618489?pwd=VlZidW84Z3E2L3RCK2hKWWg1ZzRUQT09')
-        elif the_class == "ספרות":
-            await ctx.send('https://edu-il.zoom.us/j/3557883542')
-        elif the_class == "שלח":
-            await ctx.send('https://edu-il.zoom.us/j/6044478281')
-        elif the_class == "אזרחות":
-            await ctx.send('https://edu-il.zoom.us/j/93395805154?pwd=dm0vY2ozc3pOUWV0MGdlazlaTHJSUT09')
-        elif the_class == "אנגלית":
-            await ctx.send('https://us04web.zoom.us/j/72069513802?pwd=NEs1Ym1xbnRBS0U4ZWNsaXFzbm1Ndz09')
-        elif the_class == "עברית":
-            await ctx.send('https://edu-il.zoom.us/j/93926817554?pwd=YldIRWUwbmhOTlFNdTdsZkZzUmRZQT09')
-        elif the_class == "תקשורת":
-            await ctx.send('https://edu-il.zoom.us/j/92207525681?pwd=czJqblZpSzZkaGREZVVmVFV6UHlYdz09')
-        elif the_class == "היסטוריה":
-            await ctx.send('https://edu-il.zoom.us/j/96656013660?pwd=Um5BeE9CRktySm9UbWNPUDErcitKQT09')
+        if the_class == "lesson name":
+            await ctx.send('lesson link')
+        elif the_class == "lesson 2 name":
+            await ctx.send('lesson 2 link')
+        #etc
         else:
             await ctx.send('class not found, the avalibe classes are: ערבית, כישורי חיים, ספורט, חינוך, מדעים, מתמטיכיף, מתמטיקה, ספרות, שלח, אזרחות, אנגלית, עברית, תקשורת, היסטוריה')
     # @client.command()
